@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+            withEnv( ["$MAVEN_HOME/bin"] ) {
+              sh 'mvn clean install'
+             }
             }
         }
     }
