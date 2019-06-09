@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            withEnv( ["/usr/local/apache-maven-3.6.1/bin"] ) {
+            withMaven(maven: 'M3' ) {
               sh 'mvn clean install'
              }
             }
