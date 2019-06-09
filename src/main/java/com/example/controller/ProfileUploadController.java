@@ -131,4 +131,5 @@ public class ProfileUploadController {
 	ModelAndView model = new ModelAndView("charts/highcharts");
 	return model;
     }
+
 }

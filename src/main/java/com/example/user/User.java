@@ -9,6 +9,7 @@ public class User {
     private String email;
     private String twitterHandle;
     private LocalDate date;
+    private Richard richard;
     private List<String> tastes = new ArrayList<String>();
 
     public String getEmail() {
@@ -43,4 +44,11 @@ public class User {
 	this.tastes = tastes;
     }
 
+    public Richard getRichard() {
+        return richard;
+    }
+
+    public void setRichard(final Richard richard) {
+        this.richard = richard;
+    }
 }
